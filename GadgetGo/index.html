@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GadgetGo*</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">GadgetGo*</div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#products">Products</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#cart">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Discover the Future of Tech</h1>
+    <p>Explore cutting-edge electronics at GadgetGo*</p>
+    <a href="#products" class="btn">Browse Products</a>
+  </section>
+
+  <section id="categories" class="categories">
+    <h2>Shop by Category</h2>
+    <div class="category-grid">
+      <button onclick="filterProducts('All')">All</button>
+      <button onclick="filterProducts('Smartphones')">Smartphones</button>
+      <button onclick="filterProducts('Laptops')">Laptops</button>
+      <button onclick="filterProducts('Accessories')">Accessories</button>
+    </div>
+  </section>
+
+  <section id="products" class="products">
+    <h2>Featured Products</h2>
+    <div class="product-grid" id="productGrid">
+      <!-- JS-generated product cards -->
+    </div>
+  </section>
+
+  <section id="cart" class="cart">
+    <h2>Your Cart</h2>
+    <ul id="cartItems"></ul>
+    <p id="cartTotal">Total: $0.00</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 GadgetGo*. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
